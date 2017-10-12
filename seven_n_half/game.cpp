@@ -28,15 +28,16 @@ void play_game() {
 		Card player_1 = cards.draw_card();
 		player.push(player_1);
 		cout << "You drew ";
+		cout << "Your hand value is: " << player.get_sum() << endl;
 		player_1.print();
 		while (player.get_sum() <= 7.5) {
-			cout << "Your hand value is: " << player.get_sum() << endl;
 			cout << "Do you want another card? (Y/N)";
 			if (cin >> "Y" || cin >> "y") {
 				Card player_2 = cards.draw_card();
 				player.push(player_2);
 				cout << "You drew ";
 				player_2.print();
+				cout << "Your hand value is: " << player.get_sum() << endl;
 			}
 		}
 		if (player.get_sum() > 7.5) {
@@ -52,15 +53,25 @@ void play_game() {
 				host.push(host_2);
 				cout << "The dealer drew ";
 				host_2.print();
-				cout<< "The dealer's hand is now"
+				cout << "The dealer's hand is now " << host.get_sum() << " points \n";
 			}
 			if (host.get_sum() > 7.5) {
 				cout << "The dealer bust!!\n";
 				deposit += bet;
-				cout << "You won " << bet << "Pisos";
+				cout << "You won " << bet << "Pisos \n";
 			}
 			else if (host.get_sum() == player.get_sum()) {
-				cout<<
+				cout << "You tied!\n" << "Your money is returned\n";
+			}
+			else if (host.get_sum() < player.get_sum()) {
+				cout << "You beat the dealer!";
+				deposit += bet;
+				cout << "You earned " << bet << " Pisos \n";
+			}
+			else {
+				cout << "The dealer beats you!";
+				deposit -= bet;
+				cout << "You lost " << bet << " Pisos\n ";
 			}
 		}
 	}
