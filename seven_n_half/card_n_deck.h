@@ -38,7 +38,11 @@ class Hand {
 private:
 	vector<Card> the_hand;
 public:
+	void push(Card c);
+	double get_sum();
 };
+// the hand may contain many cards...
+
 Card::Card(int random) {
 	count = random;
 }
@@ -122,6 +126,17 @@ void Deck::reshuffle() {
 	for (int i = 0; i < 40; ++i) {
 		the_deck.push_back(i);
 	} //reused some code, probably not the best idea...
+}
+
+void Hand::push(Card c) {
+	the_hand.push_back(c);
+}
+double Hand::get_sum() {
+	double sum = 0;
+	for (int i = 0; i < the_hand.size(); ++i) {
+		sum += the_hand[i].get_value();
+	}
+	return sum;
 }
 #endif
 
