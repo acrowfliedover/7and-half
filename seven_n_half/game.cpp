@@ -10,7 +10,7 @@ void play_game();//one complete game
 
 
 void play_game() {
-	int deposit = 1000;//starting cash
+	int deposit = 100;//starting cash
 	cout << "Start Game? (Y/N)";
 	while ((cin >>"Y"|| cin >> "y")&& deposit>0) {
 		cout << "You have " << deposit << " Pisos. \n";
@@ -45,7 +45,23 @@ void play_game() {
 			cout << "You lost " << bet << " Pisos \n";
 		}
 		else {
-
+			cout << "The dealer's first card is ";
+			host_1.print();
+			while (host.get_sum() <= 5||host.get_sum()>7.5) {
+				Card host_2 = cards.draw_card();
+				host.push(host_2);
+				cout << "The dealer drew ";
+				host_2.print();
+				cout<< "The dealer's hand is now"
+			}
+			if (host.get_sum() > 7.5) {
+				cout << "The dealer bust!!\n";
+				deposit += bet;
+				cout << "You won " << bet << "Pisos";
+			}
+			else if (host.get_sum() == player.get_sum()) {
+				cout<<
+			}
 		}
 	}
 	cout << "Game Over";
