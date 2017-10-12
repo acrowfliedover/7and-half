@@ -131,6 +131,8 @@ void Deck::reshuffle() {
 void Hand::push(Card c) {
 	the_hand.push_back(c);
 }
+//adding a new card to the hand
+
 double Hand::get_sum() {
 	double sum = 0;
 	for (int i = 0; i < the_hand.size(); ++i) {
@@ -138,6 +140,8 @@ double Hand::get_sum() {
 	}
 	return sum;
 }
+//return the sum of value in a hand
+
 #endif
 
 //to be honest...I don't really see the merging process...maybe I will try another time
