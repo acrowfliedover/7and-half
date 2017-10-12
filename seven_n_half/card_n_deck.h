@@ -10,6 +10,7 @@
 #define HEADER_H
 class Card;//can output the card's suit and number
 class Deck;//contains the full or changed deck...
+class Hand;//found out much easier to have a class hand
 
 class Card {
 private:
@@ -19,6 +20,7 @@ public:
 	int get_suit();
 	int get_number();
 	void print();
+	double get_value();
 	friend class Deck;
 };
 
@@ -31,6 +33,12 @@ public:
 	void reshuffle();
 };
 //construct a card using a number
+
+class Hand {
+private:
+	vector<Card> the_hand;
+public:
+};
 Card::Card(int random) {
 	count = random;
 }
@@ -88,6 +96,15 @@ void Card::print() {
 	}
 }
 //creates a full deck
+double Card::get_value() {
+	if (this->get_number() == 0 || this->get_number() >= 9) {
+		return .5;
+	}
+	else {
+		return this->get_number();
+	}
+}
+
 Deck::Deck() {
 	for (int i = 0; i < 40; ++i) {
 		the_deck.push_back(i);

@@ -20,5 +20,14 @@ void play_game() {
 		} while (bet <= 0 || bet > deposit);
 		Deck cards;
 		Card host_1 = cards.draw_card();
+		cout << "The dealer drew a card";
+		Card player_1 = cards.draw_card();
+		cout << "You drew ";
+		player_1.print();
+		cout << "Do you want another card? (Y/N)";
+		if (cin >> Y || cin >> y) {
+
+		}
 	}
+	cout << "Game Over";
 }
