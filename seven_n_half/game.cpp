@@ -17,7 +17,8 @@ void play_game() {
 		do  {
 			cout << "How much do you want to bet?" << endl;
 			cin >> bet;
-		} while(bet <= 0 || bet > deposit)
-
+		} while (bet <= 0 || bet > deposit);
+		Deck cards;
+		Card host_1 = cards.draw_card();
 	}
 }

@@ -25,8 +25,8 @@ public:
 class Deck {
 private:
 	std::vector<int> the_deck;
-	Deck();//default constructor
 public:
+	Deck();//default constructor
 	Card draw_card();
 	void reshuffle();
 };
