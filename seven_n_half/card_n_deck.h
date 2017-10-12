@@ -4,7 +4,9 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include <string>
+//#include <string>
+
+using namespace std;
 
 #ifndef HEADER_H
 #define HEADER_H
@@ -36,7 +38,7 @@ public:
 
 class Hand {
 private:
-	vector<Card> the_hand;
+	vector<Card> the_hand;//can't be over 16 anyways
 public:
 	void push(Card c);
 	double get_sum();
@@ -48,7 +50,7 @@ Card::Card(int random) {
 }
 //return the suit of the card
 int Card::get_suit() {
-	return count / 4; //this makes more sense
+	return count / 10; //this makes more sense
 }
 //return the number of the card
 int Card::get_number() {
@@ -98,10 +100,11 @@ void Card::print() {
 	else if (get_suit() == 3) {
 		std::cout << "Espadas (Swords)";
 	}
+	cout << endl;
 }
 //creates a full deck
 double Card::get_value() {
-	if (this->get_number() == 0 || this->get_number() >= 9) {
+	if (this->get_number() == 0 || this->get_number() >= 8) {
 		return .5;
 	}
 	else {
@@ -117,7 +120,8 @@ Deck::Deck() {
 Card Deck::draw_card() {
 	int random = rand() % the_deck.size();
 	Card draw(the_deck[random]);//this makes more sense
-	the_deck.erase[random];//note that now the deck has one less card so no repeat cards.
+	the_deck.erase(the_deck.begin()+random);//note that now the deck has one less card so no repeat cards.
+	//the erase funtion passes in a pointer
 	return draw;//returns the card drawn...
 }
 

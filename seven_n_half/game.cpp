@@ -2,7 +2,7 @@
 #include "card_n_deck.h"
 #include <ctime>
 #include <cstdlib>
-
+#include <string>
 using namespace std;
 void play_game();//one complete game
 
@@ -11,6 +11,8 @@ void play_game();//one complete game
 
 void play_game() {
 	int deposit = 100;//starting cash
+	string restart;
+	Deck cards;
 	cout << "You have " << deposit << " Pisos. \n";
 	do  {
 		int bet;
@@ -18,20 +20,22 @@ void play_game() {
 			cout << "How much do you want to bet?" << endl;
 			cin >> bet;
 		} while (bet <= 0 || bet > deposit);
-		Deck cards;
+		cards.reshuffle();
 		Hand host;
 		Hand player;
 		Card host_1 = cards.draw_card();
 		host.push(host_1);
-		cout << "The dealer drew a card";
+		cout << "The dealer drew a card\n";
 		Card player_1 = cards.draw_card();
 		player.push(player_1);
 		cout << "You drew ";
-		cout << "Your hand value is: " << player.get_sum() << endl;
 		player_1.print();
-		while (player.get_sum() <= 7.5) {
+		cout << "Your hand value is: " << player.get_sum() << endl;
+		string input="Y";
+		while (player.get_sum() <= 7.5&&(input=="Y"||input=="y")) {
 			cout << "Do you want another card? (Y/N)";
-			if (cin >> "Y" || cin >> "y") {
+			cin >> input;
+			if (input== "Y" || input== "y") {
 				Card player_2 = cards.draw_card();
 				player.push(player_2);
 				cout << "You drew ";
@@ -47,7 +51,7 @@ void play_game() {
 		else {
 			cout << "The dealer's first card is ";
 			host_1.print();
-			while (host.get_sum() <= 5||host.get_sum()>7.5) {
+			while (host.get_sum() <= 5) {
 				Card host_2 = cards.draw_card();
 				host.push(host_2);
 				cout << "The dealer drew ";
@@ -82,8 +86,15 @@ void play_game() {
 			cout << "You are the grand winner!!!\n";
 		}
 		else {
-			cout << "Do you want to continue?\n";
+			cout << "Do you want to continue?(Y/N)\n";
+			cin >> restart;
 		}
-	} while ((cin >> "Y" || cin >> "y") && deposit > 0 && deposit < 1000);
-	cout << "Game Over";
+	} while ((restart == "Y" || restart == "y") && deposit > 0 && deposit < 1000);
+	cout << "Game Over\n";
+}
+
+int main() {
+	srand((int)time(0));
+	play_game();
+	return 0;
 }
