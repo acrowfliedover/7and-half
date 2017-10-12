@@ -3,5 +3,12 @@
 #include <ctime>
 #include <cstdlib>
 
-void game();
+using namespace std;
+void play_game();//one complete game
 
+
+
+
+void play_game() {
+	
+}
