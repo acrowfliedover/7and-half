@@ -11,9 +11,8 @@ void play_game();//one complete game
 
 void play_game() {
 	int deposit = 100;//starting cash
-	cout << "Start Game? (Y/N)";
-	while ((cin >>"Y"|| cin >> "y")&& deposit>0) {
-		cout << "You have " << deposit << " Pisos. \n";
+	cout << "You have " << deposit << " Pisos. \n";
+	do  {
 		int bet;
 		do  {
 			cout << "How much do you want to bet?" << endl;
@@ -73,7 +72,18 @@ void play_game() {
 				deposit -= bet;
 				cout << "You lost " << bet << " Pisos\n ";
 			}
+			
 		}
-	}
+		cout << "You have " << deposit << " Pisos. \n";
+		if (deposit <= 0) {
+			cout << "You have no money!\n";
+		}
+		else if (deposit >= 1000) {
+			cout << "You are the grand winner!!!\n";
+		}
+		else {
+			cout << "Do you want to continue?\n";
+		}
+	} while ((cin >> "Y" || cin >> "y") && deposit > 0 && deposit < 1000);
 	cout << "Game Over";
 }
