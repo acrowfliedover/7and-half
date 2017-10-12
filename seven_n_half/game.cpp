@@ -51,6 +51,7 @@ void play_game() {
 		else {
 			cout << "The dealer's first card is ";
 			host_1.print();
+			cout << "The dealer's hand is now " << host.get_sum() << " points \n";
 			while (host.get_sum() <= 5) {
 				Card host_2 = cards.draw_card();
 				host.push(host_2);
@@ -74,7 +75,7 @@ void play_game() {
 			else {
 				cout << "The dealer beats you!";
 				deposit -= bet;
-				cout << "You lost " << bet << " Pisos\n ";
+				cout << "You lost " << bet << " Pisos\n";
 			}
 			
 		}
@@ -95,6 +96,11 @@ void play_game() {
 
 int main() {
 	srand((int)time(0));
-	play_game();
+	string restart = "Y";
+	while (restart == "Y" || restart == "y") {
+		play_game();
+		cout << "Do you want to restart the game? (Y/N)\n";
+		cin >> restart;
+	}
 	return 0;
 }
