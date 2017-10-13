@@ -5,7 +5,10 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
+#include <ostream>
+
 using namespace std;
+
 void play_game() {
 	ofstream fout;
 	int game_count = 0;
@@ -30,7 +33,7 @@ void play_game() {
 		Card player_1 = cards.draw_card();
 		player.push(player_1);
 		cout << "You drew ";
-		player_1.print();
+		player_1.print(cout);
 		cout << "Your hand value is: " << player.get_sum() << endl;
 		string input="Y";
 		while (player.get_sum() <= 7.5&&(input=="Y"||input=="y")) {
@@ -40,7 +43,7 @@ void play_game() {
 				Card player_2 = cards.draw_card();
 				player.push(player_2);
 				cout << "You drew ";
-				player_2.print();
+				player_2.print(cout);
 				cout << "Your hand value is: " << player.get_sum() << endl;
 			}
 		}

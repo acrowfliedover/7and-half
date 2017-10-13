@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <ostream>
 //#include <string>
 
 using namespace std;
@@ -21,7 +22,7 @@ public:
 	Card(int random);
 	int get_suit();
 	int get_number();
-	void print();
+	void print(ostream out);
 	double get_value();
 	friend class Deck;
 };
@@ -57,50 +58,50 @@ int Card::get_number() {
 	return count % 10;
 }
 //output the card number and suit
-void Card::print() {
+void Card::print(ostream out) {
 	if (get_number() == 0) {
-		std::cout << "Rey (12) of ";
+		out << "Rey (12) of ";
 	}
 	else if (get_number() == 1) {
-		std::cout << "As (A) of ";
+		out << "As (A) of ";
 	}
 	else if (get_number() == 2) {
-		std::cout << "Dos (2) of ";
+		out << "Dos (2) of ";
 	}
 	else if (get_number() == 3) {
-		std::cout << "Tres (3) of ";
+		out << "Tres (3) of ";
 	}
 	else if (get_number() == 4) {
-		std::cout << "Cuatro (4) of ";
+		out << "Cuatro (4) of ";
 	}
 	else if (get_number() == 5) {
-		std::cout << "Cinco (5) of ";
+		out << "Cinco (5) of ";
 	}
 	else if (get_number() == 6) {
-		std::cout << "Seis (6) of ";
+		out << "Seis (6) of ";
 	}
 	else if (get_number() == 7) {
-		std::cout << "Siete (7) of ";
+		out << "Siete (7) of ";
 	}
 	else if (get_number() == 8) {
-		std::cout << "Sota (10) of ";
+		out << "Sota (10) of ";
 	}
 	else if (get_number() == 9) {
-		std::cout << "Caballo (11) of ";
+		out << "Caballo (11) of ";
 	}
 	if (get_suit() == 0) {
-		std::cout << "Copas (Cups) ";
+		out << "Copas (Cups) ";
 	}
 	else if (get_suit() == 1) {
-		std::cout << "Oros (Golds) ";
+		out << "Oros (Golds) ";
 	}
 	else if (get_suit() == 2) {
-		std::cout << "Bastos (Clubs) ";
+		out << "Bastos (Clubs) ";
 	}
 	else if (get_suit() == 3) {
-		std::cout << "Espadas (Swords)";
+		out << "Espadas (Swords)";
 	}
-	cout << endl;
+	out << endl;
 }
 //creates a full deck
 double Card::get_value() {
