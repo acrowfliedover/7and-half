@@ -42,6 +42,7 @@ private:
 public:
 	void push(Card c);
 	double get_sum();
+	int size();
 };
 // the hand may contain many cards...
 
@@ -146,6 +147,9 @@ double Hand::get_sum() {
 }
 //return the sum of value in a hand
 
+int Hand::size() {
+	return the_hand.size();
+}
 #endif
 
 //to be honest...I don't really see the merging process...maybe I will try another time

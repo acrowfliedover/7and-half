@@ -92,9 +92,10 @@ void play_game() {
 			cout << "Do you want to continue?(Y/N)\n";
 			cin >> restart;
 		}
-		fout << "Your cards: ";
+		fout << "Your cards : ";
 		for (int i = 0; i < player.size(); ++i) {
-			fout<<
+			fout << "\t\t";
+			print()
 		}
 	} while ((restart == "Y" || restart == "y") && deposit > 0 && deposit < 1000);
 	cout << "Game Over\n";
