@@ -3,23 +3,25 @@
 #include <ctime>
 #include <cstdlib>
 #include <string>
+#include <fstream>
+#include <iomanip>
 using namespace std;
-void play_game();//one complete game
-
-
-
-
 void play_game() {
+	ofstream fout;
+	fout.open("gamelog.txt");
+	int game_count = 0;
 	int deposit = 100;//starting cash
 	string restart;
 	Deck cards;
 	cout << "You have " << deposit << " Pisos. \n";
 	do  {
 		int bet;
+		game_count++;
 		do  {
 			cout << "How much do you want to bet?" << endl;
 			cin >> bet;
 		} while (bet <= 0 || bet > deposit);
+		fout << "******************************************\n\n\n" << "game: "<<game_count<<endl<<"Current Deposit: " << deposit << "           bet: " << bet<<endl<<endl;
 		cards.reshuffle();
 		Hand host;
 		Hand player;
@@ -89,6 +91,10 @@ void play_game() {
 		else {
 			cout << "Do you want to continue?(Y/N)\n";
 			cin >> restart;
+		}
+		fout << "Your cards: ";
+		for (int i = 0; i < player.size(); ++i) {
+			fout<<
 		}
 	} while ((restart == "Y" || restart == "y") && deposit > 0 && deposit < 1000);
 	cout << "Game Over\n";
