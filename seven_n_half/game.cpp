@@ -11,6 +11,7 @@ using namespace std;
 
 void play_game() {
 	ofstream fout;
+	fout.open("gamelog.txt");
 	int game_count = 0;
 	int deposit = 100;//starting cash
 	string restart;
@@ -54,13 +55,13 @@ void play_game() {
 		}
 		else {
 			cout << "The dealer's first card is ";
-			host_1.print();
+			host_1.print(cout);
 			cout << "The dealer's hand is now " << host.get_sum() << " points \n";
 			while (host.get_sum() <= 5) {
 				Card host_2 = cards.draw_card();
 				host.push(host_2);
 				cout << "The dealer drew ";
-				host_2.print();
+				host_2.print(cout);
 				cout << "The dealer's hand is now " << host.get_sum() << " points \n";
 			}
 			if (host.get_sum() > 7.5) {
@@ -97,13 +98,13 @@ void play_game() {
 		fout << "Your cards: \n";
 		for (int i = 0; i < player.size(); ++i) {
 			fout << "\t\t";
-			player.the_hand[i].print();
+			player.the_hand[i].print(fout);
 		}
 		fout << "Your total is: \n" << player.get_sum() << endl << endl;
 		fout << "The dealer's cards: \n";
 		for (int i = 0; i < host.size(); ++i) {
 			fout << "\t\t";
-			host.the_hand[i].print();
+			host.the_hand[i].print(fout);
 		}
 		fout << "The dealer's total is: \n" << host.get_sum() << endl << endl << endl;
 	} while ((restart == "Y" || restart == "y") && deposit > 0 && deposit < 1000);

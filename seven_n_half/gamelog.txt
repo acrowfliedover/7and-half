@@ -1,0 +1,21 @@
+******************************************
+
+
+game: 1
+Current Deposit: 100           bet: 100
+
+Your cards: 
+		Dos (2) of Copas (Cups) 
+		Caballo (11) of Copas (Cups) 
+		As (A) of Espadas (Swords)
+		Rey (12) of Espadas (Swords)
+		Sota (10) of Bastos (Clubs) 
+Your total is: 
+4.5
+
+The dealer's cards: 
+		Seis (6) of Espadas (Swords)
+The dealer's total is: 
+6
+
+

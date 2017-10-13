@@ -22,7 +22,7 @@ public:
 	Card(int random);
 	int get_suit();
 	int get_number();
-	void print(ostream out);
+	void print(ostream& out);
 	double get_value();
 	friend class Deck;
 };
@@ -58,7 +58,7 @@ int Card::get_number() {
 	return count % 10;
 }
 //output the card number and suit
-void Card::print(ostream out) {
+void Card::print(ostream& out) {
 	if (get_number() == 0) {
 		out << "Rey (12) of ";
 	}
