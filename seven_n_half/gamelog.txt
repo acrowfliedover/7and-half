@@ -2,68 +2,193 @@
 
 
 game: 1
-Current Deposit: 100           bet: 50
+Current Deposit: 100           bet: 20
 
 Your cards: 
-		Rey (12) of Oros (Golds) 
-		Cinco (5) of Oros (Golds) 
+		Siete (7) of Oros (Golds) 
 Your total is: 
-5.5
+7
 
 The dealer's cards: 
+		As (A) of Oros (Golds) 
+		Sota (10) of Espadas (Swords)
 		As (A) of Espadas (Swords)
-		Cinco (5) of Bastos (Clubs) 
+		Cuatro (4) of Espadas (Swords)
 The dealer's total is: 
-6
+6.5
 
 
 ******************************************
 
 
 game: 2
-Current Deposit: 50           bet: 50
+Current Deposit: 120           bet: 20
 
 Your cards: 
-		Siete (7) of Bastos (Clubs) 
+		Dos (2) of Espadas (Swords)
+		Dos (2) of Oros (Golds) 
+		Caballo (11) of Oros (Golds) 
 Your total is: 
-7
+4.5
 
 The dealer's cards: 
-		Tres (3) of Bastos (Clubs) 
-		Cuatro (4) of Bastos (Clubs) 
+		Caballo (11) of Copas (Cups) 
+		Seis (6) of Espadas (Swords)
 The dealer's total is: 
-7
+6.5
 
 
 ******************************************
 
 
 game: 3
-Current Deposit: 50           bet: 50
+Current Deposit: 100           bet: 20
 
 Your cards: 
-		Siete (7) of Bastos (Clubs) 
+		Seis (6) of Copas (Cups) 
 Your total is: 
-7
+6
 
 The dealer's cards: 
-		As (A) of Oros (Golds) 
-		Siete (7) of Copas (Cups) 
+		Cuatro (4) of Espadas (Swords)
+		As (A) of Espadas (Swords)
+		Cinco (5) of Oros (Golds) 
 The dealer's total is: 
-8
+10
 
 
 ******************************************
 
 
 game: 4
-Current Deposit: 100           bet: 50
+Current Deposit: 120           bet: 20
 
 Your cards: 
-		Cuatro (4) of Espadas (Swords)
-		Seis (6) of Bastos (Clubs) 
+		Siete (7) of Espadas (Swords)
+Your total is: 
+7
+
+The dealer's cards: 
+		Dos (2) of Copas (Cups) 
+		As (A) of Oros (Golds) 
+		Sota (10) of Oros (Golds) 
+		Siete (7) of Oros (Golds) 
+The dealer's total is: 
+10.5
+
+
+******************************************
+
+
+game: 5
+Current Deposit: 140           bet: 20
+
+Your cards: 
+		Cinco (5) of Bastos (Clubs) 
+		As (A) of Espadas (Swords)
+Your total is: 
+6
+
+The dealer's cards: 
+		Dos (2) of Espadas (Swords)
+		Cinco (5) of Copas (Cups) 
+The dealer's total is: 
+7
+
+
+******************************************
+
+
+game: 6
+Current Deposit: 120           bet: 20
+
+Your cards: 
+		Rey (12) of Espadas (Swords)
+		Rey (12) of Oros (Golds) 
+		As (A) of Espadas (Swords)
+		Dos (2) of Oros (Golds) 
+		Cinco (5) of Copas (Cups) 
+Your total is: 
+9
+
+The dealer's cards: 
+		Siete (7) of Bastos (Clubs) 
+The dealer's total is: 
+7
+
+
+******************************************
+
+
+game: 7
+Current Deposit: 100           bet: 20
+
+Your cards: 
+		Cinco (5) of Espadas (Swords)
+Your total is: 
+5
+
+The dealer's cards: 
+		Dos (2) of Espadas (Swords)
+		Caballo (11) of Espadas (Swords)
+		Sota (10) of Bastos (Clubs) 
+		Sota (10) of Copas (Cups) 
+		Caballo (11) of Oros (Golds) 
+		Caballo (11) of Copas (Cups) 
+		Rey (12) of Copas (Cups) 
+		Cuatro (4) of Copas (Cups) 
+The dealer's total is: 
+9
+
+
+******************************************
+
+
+game: 8
+Current Deposit: 120           bet: 20
+
+Your cards: 
+		As (A) of Oros (Golds) 
+		Siete (7) of Copas (Cups) 
+Your total is: 
+8
+
+The dealer's cards: 
+		Dos (2) of Copas (Cups) 
+The dealer's total is: 
+2
+
+
+******************************************
+
+
+game: 9
+Current Deposit: 100           bet: 20
+
+Your cards: 
+		Cuatro (4) of Oros (Golds) 
+		Seis (6) of Espadas (Swords)
 Your total is: 
 10
+
+The dealer's cards: 
+		Sota (10) of Copas (Cups) 
+The dealer's total is: 
+0.5
+
+
+******************************************
+
+
+game: 10
+Current Deposit: 80           bet: 20
+
+Your cards: 
+		As (A) of Bastos (Clubs) 
+		Rey (12) of Bastos (Clubs) 
+		Siete (7) of Oros (Golds) 
+Your total is: 
+8.5
 
 The dealer's cards: 
 		Dos (2) of Espadas (Swords)
@@ -74,17 +199,260 @@ The dealer's total is:
 ******************************************
 
 
-game: 5
-Current Deposit: 50           bet: 50
+game: 11
+Current Deposit: 60           bet: 20
 
 Your cards: 
-		Cuatro (4) of Copas (Cups) 
-		Cuatro (4) of Oros (Golds) 
+		Dos (2) of Bastos (Clubs) 
+		Tres (3) of Oros (Golds) 
+		Caballo (11) of Espadas (Swords)
 Your total is: 
-8
+5.5
 
 The dealer's cards: 
 		Siete (7) of Espadas (Swords)
+The dealer's total is: 
+7
+
+
+******************************************
+
+
+game: 12
+Current Deposit: 40           bet: 20
+
+Your cards: 
+		Siete (7) of Espadas (Swords)
+Your total is: 
+7
+
+The dealer's cards: 
+		Sota (10) of Oros (Golds) 
+		Cuatro (4) of Espadas (Swords)
+		Dos (2) of Espadas (Swords)
+The dealer's total is: 
+6.5
+
+
+******************************************
+
+
+game: 13
+Current Deposit: 60           bet: 20
+
+Your cards: 
+		Tres (3) of Espadas (Swords)
+		Dos (2) of Oros (Golds) 
+Your total is: 
+5
+
+The dealer's cards: 
+		Cuatro (4) of Oros (Golds) 
+		Siete (7) of Oros (Golds) 
+The dealer's total is: 
+11
+
+
+******************************************
+
+
+game: 14
+Current Deposit: 80           bet: 20
+
+Your cards: 
+		Rey (12) of Bastos (Clubs) 
+		Tres (3) of Bastos (Clubs) 
+		Sota (10) of Copas (Cups) 
+		Caballo (11) of Copas (Cups) 
+		Caballo (11) of Oros (Golds) 
+Your total is: 
+5
+
+The dealer's cards: 
+		As (A) of Espadas (Swords)
+		Sota (10) of Oros (Golds) 
+		Rey (12) of Espadas (Swords)
+		Seis (6) of Oros (Golds) 
+The dealer's total is: 
+8
+
+
+******************************************
+
+
+game: 15
+Current Deposit: 100           bet: 20
+
+Your cards: 
+		Cuatro (4) of Copas (Cups) 
+		Seis (6) of Copas (Cups) 
+Your total is: 
+10
+
+The dealer's cards: 
+		As (A) of Bastos (Clubs) 
+The dealer's total is: 
+1
+
+
+******************************************
+
+
+game: 16
+Current Deposit: 80           bet: 20
+
+Your cards: 
+		Sota (10) of Copas (Cups) 
+		Cinco (5) of Oros (Golds) 
+		Cinco (5) of Bastos (Clubs) 
+Your total is: 
+10.5
+
+The dealer's cards: 
+		Caballo (11) of Oros (Golds) 
+The dealer's total is: 
+0.5
+
+
+******************************************
+
+
+game: 17
+Current Deposit: 60           bet: 20
+
+Your cards: 
+		Sota (10) of Oros (Golds) 
+		Cuatro (4) of Espadas (Swords)
+		Rey (12) of Bastos (Clubs) 
+		Rey (12) of Espadas (Swords)
+Your total is: 
+5.5
+
+The dealer's cards: 
+		Caballo (11) of Bastos (Clubs) 
+		Cuatro (4) of Oros (Golds) 
+		As (A) of Espadas (Swords)
+The dealer's total is: 
+5.5
+
+
+******************************************
+
+
+game: 18
+Current Deposit: 60           bet: 20
+
+Your cards: 
+		Cinco (5) of Bastos (Clubs) 
+		Sota (10) of Oros (Golds) 
+Your total is: 
+5.5
+
+The dealer's cards: 
+		Dos (2) of Oros (Golds) 
+		Caballo (11) of Bastos (Clubs) 
+		Seis (6) of Oros (Golds) 
+The dealer's total is: 
+8.5
+
+
+******************************************
+
+
+game: 19
+Current Deposit: 80           bet: 20
+
+Your cards: 
+		As (A) of Copas (Cups) 
+		Cinco (5) of Bastos (Clubs) 
+Your total is: 
+6
+
+The dealer's cards: 
+		Dos (2) of Espadas (Swords)
+		Caballo (11) of Espadas (Swords)
+		Rey (12) of Copas (Cups) 
+		As (A) of Espadas (Swords)
+		Seis (6) of Espadas (Swords)
+The dealer's total is: 
+10
+
+
+******************************************
+
+
+game: 20
+Current Deposit: 100           bet: 20
+
+Your cards: 
+		Caballo (11) of Copas (Cups) 
+		As (A) of Espadas (Swords)
+		Rey (12) of Copas (Cups) 
+		Cinco (5) of Espadas (Swords)
+Your total is: 
+7
+
+The dealer's cards: 
+		Caballo (11) of Oros (Golds) 
+		Siete (7) of Oros (Golds) 
+The dealer's total is: 
+7.5
+
+
+******************************************
+
+
+game: 21
+Current Deposit: 80           bet: 20
+
+Your cards: 
+		Cuatro (4) of Oros (Golds) 
+		As (A) of Bastos (Clubs) 
+Your total is: 
+5
+
+The dealer's cards: 
+		Tres (3) of Bastos (Clubs) 
+		Sota (10) of Oros (Golds) 
+		As (A) of Copas (Cups) 
+		Siete (7) of Oros (Golds) 
+The dealer's total is: 
+11.5
+
+
+******************************************
+
+
+game: 22
+Current Deposit: 100           bet: 10
+
+Your cards: 
+		Dos (2) of Espadas (Swords)
+		As (A) of Oros (Golds) 
+		Siete (7) of Espadas (Swords)
+Your total is: 
+10
+
+The dealer's cards: 
+		Dos (2) of Bastos (Clubs) 
+The dealer's total is: 
+2
+
+
+******************************************
+
+
+game: 23
+Current Deposit: 90           bet: 90
+
+Your cards: 
+		Seis (6) of Bastos (Clubs) 
+Your total is: 
+6
+
+The dealer's cards: 
+		Cuatro (4) of Bastos (Clubs) 
+		Tres (3) of Oros (Golds) 
 The dealer's total is: 
 7
 
