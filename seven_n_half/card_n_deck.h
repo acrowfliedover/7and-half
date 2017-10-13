@@ -37,9 +37,8 @@ public:
 //construct a card using a number
 
 class Hand {
-private:
-	vector<Card> the_hand;//can't be over 16 anyways
 public:
+	vector<Card> the_hand;
 	void push(Card c);
 	double get_sum();
 	int size();
