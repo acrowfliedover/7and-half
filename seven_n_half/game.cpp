@@ -109,19 +109,11 @@ void play_game() {
 		fout << "The dealer's total is: \n" << host.get_sum() << endl << endl << endl;
 	} while ((restart == "Y" || restart == "y") && deposit > 0 && deposit < 1000);
 	cout << "Game Over\n";
+	fout << "******************************************";
 }
 
 int main() {
 	srand((int)time(0));
-	ofstream fout;
-	fout.open("gamelog.txt");
-	string restart = "Y";
-	while (restart == "Y" || restart == "y") {
-		play_game();
-		cout << "Do you want to restart the game? (Y/N)\n";
-		cin >> restart;
-	}
-	fout << "******************************************";
-	fout.close();
+	play_game();
 	return 0;
 }
