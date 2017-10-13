@@ -8,7 +8,6 @@
 using namespace std;
 void play_game() {
 	ofstream fout;
-	fout.open("gamelog.txt");
 	int game_count = 0;
 	int deposit = 100;//starting cash
 	string restart;
@@ -64,7 +63,7 @@ void play_game() {
 			if (host.get_sum() > 7.5) {
 				cout << "The dealer bust!!\n";
 				deposit += bet;
-				cout << "You won " << bet << "Pisos \n";
+				cout << "You won " << bet << " Pisos \n";
 			}
 			else if (host.get_sum() == player.get_sum()) {
 				cout << "You tied!\n" << "Your money is returned\n";
@@ -92,22 +91,33 @@ void play_game() {
 			cout << "Do you want to continue?(Y/N)\n";
 			cin >> restart;
 		}
-		fout << "Your cards : ";
+		fout << "Your cards: \n";
 		for (int i = 0; i < player.size(); ++i) {
 			fout << "\t\t";
-			print()
+			player.the_hand[i].print();
 		}
+		fout << "Your total is: \n" << player.get_sum() << endl << endl;
+		fout << "The dealer's cards: \n";
+		for (int i = 0; i < host.size(); ++i) {
+			fout << "\t\t";
+			host.the_hand[i].print();
+		}
+		fout << "The dealer's total is: \n" << host.get_sum() << endl << endl << endl;
 	} while ((restart == "Y" || restart == "y") && deposit > 0 && deposit < 1000);
 	cout << "Game Over\n";
 }
 
 int main() {
 	srand((int)time(0));
+	ofstream fout;
+	fout.open("gamelog.txt");
 	string restart = "Y";
 	while (restart == "Y" || restart == "y") {
 		play_game();
 		cout << "Do you want to restart the game? (Y/N)\n";
 		cin >> restart;
 	}
+	fout << "******************************************";
+	fout.close();
 	return 0;
 }
